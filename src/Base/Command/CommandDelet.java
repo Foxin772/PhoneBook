@@ -1,9 +1,8 @@
 package Base.Command;
 
-import Base.CommandExit;
-import Base.ConsoleHalper;
-import Base.IniHalper;
-import Base.PhoneBook;
+import Base.*;
+import Base.Exceptions.CommandExit;
+import Base.Exceptions.GoToMenuException;
 
 import java.util.HashMap;
 import java.util.Map;

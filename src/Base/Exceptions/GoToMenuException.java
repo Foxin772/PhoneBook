@@ -1,4 +1,4 @@
-package Base.Command;
+package Base.Exceptions;
 
 /**
  * Created by denci on 12.04.2016.

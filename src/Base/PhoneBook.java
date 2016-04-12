@@ -1,7 +1,8 @@
 package Base;
 
 import Base.Command.Comand;
-import Base.Command.GoToMenuException;
+import Base.Exceptions.CommandExit;
+import Base.Exceptions.GoToMenuException;
 
 import java.util.HashMap;
 import java.util.Map;

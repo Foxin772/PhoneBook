@@ -1,6 +1,7 @@
 package Base;
 
-import Base.Command.GoToMenuException;
+import Base.Exceptions.CommandExit;
+import Base.Exceptions.GoToMenuException;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
