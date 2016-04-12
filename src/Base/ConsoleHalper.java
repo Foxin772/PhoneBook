@@ -26,6 +26,11 @@ public class ConsoleHalper {
         return read().trim();
     }
 
+    public static String getAnswer() throws Exception
+    {
+        return read().trim();
+    }
+
     public static String[] getComand() throws Exception
     {
         return read().split(" ");

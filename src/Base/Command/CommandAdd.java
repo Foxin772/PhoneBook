@@ -23,10 +23,14 @@ class CommandAdd implements Command  {
                 }else
                 PhoneBook.clients.put(arguments[1], arguments[0]);
                 ConsoleHalper.write("Запись успешно добавлена");
+                ConsoleHalper.write("Добавить еще запись? (Да/Нет)");
+                if(ConsoleHalper.getAnswer().equalsIgnoreCase("нет"))
                 break;
             } catch (CommandExit e) {
                 throw e;
-            } catch (Exception e) {
+            }catch (GoToMenuException e)
+            {}
+            catch (Exception e) {
                 ConsoleHalper.write("Введены неверные значения");
             }
         }

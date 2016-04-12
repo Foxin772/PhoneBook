@@ -37,7 +37,9 @@ class CommandSelect implements Command {
                 break;
             }catch (CommandExit e) {
                 throw e;
-            } catch (Exception e) {
+            }catch (GoToMenuException e)
+            {}
+            catch (Exception e) {
                 ConsoleHalper.write("Введен неверный контакт");
             }
         }
