@@ -22,8 +22,9 @@ public class IniHalper {
     public static void save()
     {
         try {
-            fileOutputStream = new FileOutputStream(fileName);
+            fileOutputStream = new FileOutputStream(fileName, false);
             OutputStreamWriter writer = new OutputStreamWriter(fileOutputStream, "Cp866");
+            properties.clear();
             for (Map.Entry<String, String> map : PhoneBook.clients.entrySet())
             {
                 properties.put(map.getKey(), map.getValue());
