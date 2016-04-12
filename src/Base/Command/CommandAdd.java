@@ -29,7 +29,7 @@ class CommandAdd implements Command  {
             } catch (CommandExit e) {
                 throw e;
             }catch (GoToMenuException e)
-            {}
+            {throw e;}
             catch (Exception e) {
                 ConsoleHalper.write("Введены неверные значения");
             }

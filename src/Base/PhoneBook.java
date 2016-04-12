@@ -11,6 +11,7 @@ public class PhoneBook {
     public static Map<String, String> clients = new HashMap<>();
     public static void main(String[] args) throws Exception
     {
+        System.out.println("********************");
         ConsoleHalper.write("Возможные команды(не зависят от регистра): Добавить, Найти, Удалить, Вывести все данные, Меню, Выход");
         IniHalper.load();
         while (true)

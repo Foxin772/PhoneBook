@@ -10,7 +10,7 @@ import java.util.Map;
 
 class CommandDelet implements Command {
     @Override
-    public void execute() throws CommandExit {
+    public void execute() throws Exception {
         if (PhoneBook.clients.size() == 0)
         {
             ConsoleHalper.write("Нет записей");
@@ -41,7 +41,9 @@ class CommandDelet implements Command {
             }catch (CommandExit e) {
                 throw e;
             }catch (GoToMenuException e)
-            {}
+            {
+                throw e;
+            }
             catch (Exception e) {
                 ConsoleHalper.write("Введен неверный контакт");
             }
